@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html >
+<!-- Simple webpage for Insurance cost Prediction-->
+<head>
+  <title>Health Insurance Cost Prediction - Ramesh Veer</title>
+</head>
+
+<body>
+ <div class="login">
+  <center>
+    <h2> Health Insurance Cost Prediction </h2>
+  </center>
+     <!-- Main Input For Receiving Query to our ML -->
+  <right>
+    <form action="{{ url_for('predict')}}"method="post">
+
+      <p> Enter your Age  :
+    	  <input type="text" name="age" required="required" />
+        <br/>
+        <br/>
+      <p> Gender          :
+        <label for="Male">Male</label>
+        <input type="radio" name="Gender" id="Male" value="1" required="required" />
+        <label for="Female">Female</label>
+        <input type="radio" name="Gender" id="Female" value="0" required="required" />
+        <br/>
+        <br/>
+      <p> Enter your BMI  :
+        <input type="text" name="BMI" required="required" />
+        <br/>
+        <br/>
+      <p> No. of Children :
+        <input type="text" name="children" required="required" />
+        <br/>
+        <br/>
+      <p> Smoker          :
+        <label for="Yes">Yes</label>
+        <input type="radio" name="Smoker" id="Yes" value="1" required="required" />
+        <label for="No">No</label>
+        <input type="radio" name="Smoker" id="No" value="0" required="required" />
+        <br/>
+        <br/>
+      <p> Region          :
+          <label for="SW">SW</label>
+          <input type="radio" name="Region" id="SW" value="3" required="required" />
+          <label for="SE">SE</label>
+          <input type="radio" name="Region" id="SE" value="2" required="required" />
+          <label for="NW">NW</label>
+          <input type="radio" name="Region" id="NW" value="1" required="required" />
+          <label for="NE">NE</label>
+          <input type="radio" name="Region" id="NE" value="0" required="required" />
+        <br/>
+        <br/>
+        <button type="submit" class="btn btn-primary btn-large">Predict_Cost</button>
+    </form>
+  </right>
+   <br>
+   <br>
+     <center>
+   {{ prediction_text }}
+    </center>
+ </div>
+
+
+</body>
+</html>
