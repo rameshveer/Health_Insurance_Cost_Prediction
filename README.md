@@ -12,3 +12,22 @@ We will be predicting cost based on a public dataset which considers the below f
 * smoker
 * region
 * charges (Dependent variable)
+
+# Algorithm's Tested for tis dataset,
+1. Linear
+  a. Lasso
+2. Decision Tree
+3. Random Forrest
+4. Boosting
+  a. Gradient Boosting
+  b. AdaBoost
+  c. xgboost
+
+# Gradient Boosting provides better r2 score of 0.89 and doesn't overfit between testing & training set.
+
+# A Web App was created with the above ML Model using Flask and deployed with Heroku.
+
+# Webapp can be accessed in below link,
+  https://health-insurance-cost-predict.herokuapp.com
+  
+
