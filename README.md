@@ -23,11 +23,11 @@ We will be predicting cost based on a public dataset which considers the below f
   b. AdaBoost
   c. xgboost
 
-# Gradient Boosting provides better r2 score of 0.89 and doesn't overfit between testing & training set.
+#### Gradient Boosting provides better r2 score of 0.89 and doesn't overfit between testing & training set.
 
-# A Web App was created with the above ML Model using Flask and deployed with Heroku.
+#### A Web App was created with the above ML Model using Flask and deployed with Heroku.
 
-# Webapp can be accessed in below link,
+#### Webapp can be accessed in below link,
   https://health-insurance-cost-predict.herokuapp.com
   
 
